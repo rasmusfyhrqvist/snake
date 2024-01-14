@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Snake</h1>
+        <p class="info">
+            Use arrowkeys to change direction and chase the apple. Space to pause<br>
+            
+            <label><input type="checkbox" id="grid-checkbox">&nbsp;Show grid</label>
+        </p>
+        <p class="scores">
+            Current&nbsp;
+            <span id="current">0</span>
+            &nbsp;&ndash;&nbsp;
+            <span id="high">0</span>
+            &nbsp;High
+        </p>
+    </header>
+    <main id="app">
+        <article id="game-over">
+            <h2>Game over</h2>
+            <p>Points: <span id="points"></span></p>
+            <button type="reset" id="rematch-btn">Rematch?</button>
+        </article>
+    </main>
+    <footer>
+        <p>&copy;&nbsp;Rasmus&nbsp;Fyhrqvist&nbsp;2023</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
